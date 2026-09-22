@@ -1,0 +1,7 @@
+pandas
+numpy
+scikit-learn
+scipy
+pymorphy3
+pymorphy3-dicts-ru
+matplotlib
