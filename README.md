@@ -44,12 +44,24 @@ python scripts/train.py
 
 Сохраняет `model.pkl.gz` (18 объектов: 17 из пайплайна + `TEMPERATURE`).
 
+## Тест 
+
+Требуется `test.tsv` в корне проекта
+Создан `test.tsv` из `train.tsv` для проверки
+(Модель не обучалась на данных, которые в `test.tsv`)
+
+```bash
+python scripts/evaluate.py
+```
+
+Сохраняет графики и текстовый отчет в reports/
+
 ## Инференс
 
 Требуется `test.tsv` в корне проекта:
 
 ```bash
-python scripts/evaluate.py
+python scripts/predict.py
 ```
 
 Сохраняет `prediction.csv` с колонками `category_id`, `department_id`.
